@@ -137,3 +137,5 @@ data  example.txt  hello.py
 archive.tar.gz
 # exit
 ```
+
+因此在 COPY 和 ADD 指令中选择的时候，可以遵循这样的原则，所有的文件复制均使用 COPY 指令，仅在需要自动解压缩的场合使用 ADD。
